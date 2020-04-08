@@ -1,6 +1,6 @@
 import React from 'react';
-import Priorities from '../../utils/Priorities';
 import T from 'prop-types';
+import Priorities from '../../utils/Priorities';
 
 const PrioritySelect = ({ label, priority, onChange }) => (
   <label>
