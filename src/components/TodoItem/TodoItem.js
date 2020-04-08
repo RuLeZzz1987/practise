@@ -8,7 +8,7 @@ const TodoItem = ({ todo, handleDoneChange, handlePriorityChange, handleRemove }
     <div>
       <PrioritySelect
         priority={todo.priority}
-        label={'Priority: '}
+        label="Priority: "
         onChange={value => handlePriorityChange(todo.id, value)}
       />
     </div>
@@ -19,7 +19,9 @@ const TodoItem = ({ todo, handleDoneChange, handlePriorityChange, handleRemove }
       </label>
     </div>
     <div>
-      <button onClick={handleRemove}>Remove Todo</button>
+      <button type="button" onClick={handleRemove}>
+        Remove Todo
+      </button>
     </div>
   </div>
 );
